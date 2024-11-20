@@ -4,7 +4,7 @@ import '../styles/Testimonials.css';
 const Testimonials: React.FC = () => {
   const carrossel = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
-  const [testimonials, setTestimonials] = useState<any[]>([]);
+  const [testimonials, setTestimonials] = useState<unknown[]>([]);
 
   useEffect(() => {
     fetch('/testimonials.json')

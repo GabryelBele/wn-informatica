@@ -1,4 +1,3 @@
-/* Define o layout da seção de processos */
 .processos {
     display: flex;
     flex-direction: column;
@@ -29,7 +28,7 @@
 
 .processos-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
     max-width: 1200px;
@@ -45,10 +44,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 90%; /* Ajuste conforme necessário */
-    max-width: 400px; /* Limita a largura máxima do card */
+    width: 90%;
+    max-width: 400px;
 }
-
 
 .flex-row-card-processos {
     display: flex;
@@ -74,7 +72,6 @@
     color: #666;
 }
 
-/* Responsivo: Ajusta para duas colunas em telas médias e uma coluna em telas pequenas */
 @media (max-width: 1024px) {
     .processos-cards {
         grid-template-columns: repeat(2, 1fr);

@@ -8,6 +8,16 @@ const Header: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleScrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <header className="header">
       <div className="logo-container">
@@ -21,10 +31,10 @@ const Header: React.FC = () => {
       </div>
 
       <nav className={`navbar ${isMenuOpen ? 'show' : ''}`}>
-        <button className="navbar-item">Serviços</button>
-        <button className="navbar-item">Portfólio</button>
-        <button className="navbar-item">Processos</button>
-        <button className="navbar-item contato">Contato</button>
+        <button className="navbar-item" onClick={() => handleScrollToSection('services')}>Serviços</button>
+        <button className="navbar-item" onClick={() => handleScrollToSection('portfolio')}>Portfólio</button>
+        <button className="navbar-item" onClick={() => handleScrollToSection('processos')}>Processos</button>
+        <button className="navbar-item contato" onClick={() => handleScrollToSection('contato')}>Contato</button>
       </nav>
     </header>
   );

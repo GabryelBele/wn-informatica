@@ -3,7 +3,7 @@ import '../styles/Processos.css';
 
 const Processos: React.FC = () => {
   return (
-    <header className="processos">
+    <header id='processos' className="processos">
       <div className="processos-text">
        <h3>Nossos Processos</h3>
        <p>Uma metodologia comprovada para entregar aplicativos exclusivos.</p>

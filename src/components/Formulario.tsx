@@ -3,7 +3,7 @@ import '../styles/Formulario.css';
 
 const Formulario: React.FC = () => {
   return (
-    <form className="formulario">
+    <form id='contato' className="formulario">
         <h2>Vamos Criar Algo Incrível Juntos</h2>
         <p>Estamos prontos para transformar sua ideia em realidade.</p>
         <div className='form-group'>

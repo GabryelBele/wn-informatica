@@ -1,11 +1,10 @@
-/* Define o layout da seção principal */
 .Section-Services {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 80px 20px;
-    background-color: #f9f9f9;
+    background-color: #FFF;
     text-align: center;
 }
 
@@ -21,14 +20,13 @@
 }
 
 .Services-text p {
-    text-align: center; /* Alinha o texto ao centro */
+    text-align: center;
     font-size: 18px;
     font-weight: bold;
     color: #555;
     width: 60%;
-    margin: 0 auto; /* Centraliza o parágrafo no contêiner */
+    margin: 0 auto;
 }
-
 
 .Services-Cards {
     margin-top: 60px;
@@ -68,15 +66,14 @@
     color: #666;
 }
 
-/* Responsivo: Para telas menores, ajusta para 2 ou 1 colunas */
 @media (max-width: 1024px) {
     .Services-Cards {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
     .Services-Cards {
-        grid-template-columns: 1fr; /* 1 coluna para telas pequenas */
+        grid-template-columns: 1fr;
     }
 }

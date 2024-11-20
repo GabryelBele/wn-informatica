@@ -3,7 +3,7 @@ import '../styles/Portfolio.css';
 
 const Portfolio: React.FC = () => {
   return (
-    <header className="portfolio">
+    <header id="portfolio" className="portfolio">
       <div className="portfolio-text">
        <h3>Nosso Portfólio</h3>
        <p>Conheça alguns dos nossos projetos mais recentes e impactantes.</p>

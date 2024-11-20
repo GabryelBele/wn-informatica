@@ -1,7 +1,7 @@
 .testimonials-container {
   max-width: 75vw;
   margin: 20px auto;
-  background-color: #f9f9f9;
+  background-color: #fff;
   border:none;
   padding: 20px;
 }
@@ -23,7 +23,23 @@
   margin-top: 5px;
 }
 
-.testimonials-carrossel { display: flex; overflow-x: auto; scroll-behavior: smooth; gap: 20px; /* Espaçamento entre cards */ padding: 10px 0; } .testimonial-item { min-width: 300px; /* Largura fixa dos cards */ max-width: 300px; flex: none; background-color: #ffffff; padding: 20px; border-radius: 16px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; }
+.testimonials-carrossel { 
+  display: flex; 
+  overflow-x: auto; 
+  scroll-behavior: smooth;
+  gap: 20px;
+  /* Espaçamento entre cards */ 
+  padding: 10px 0; } 
+  
+  .testimonial-item { 
+    min-width: 300px; 
+    /* Largura fixa dos cards */ 
+    max-width: 300px; flex: none; 
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 16px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; }
 
 
 .testimonials-carrossel::-webkit-scrollbar {

@@ -36,7 +36,7 @@
 /* Button Group */
 .main-left .button-group {
   display: flex;
-  gap: 15px; /* Espaçamento entre os botões */
+  gap: 15px;
   margin-top: 20px;
 }
 
@@ -83,48 +83,48 @@
 /* Responsividade: Ajusta o layout para telas menores */
 @media (max-width: 936px) {
   .main-section {
-    flex-direction: column; /* Muda para exibir os elementos em coluna */
-    padding: 20px; /* Ajusta o espaçamento */
+    flex-direction: column;
+    padding-top: 90px;
   }
 
   .main-left, .main-right {
-    max-width: 100%; /* Define largura máxima de 100% */
-    margin: 0; /* Remove margens desnecessárias */
-    text-align: center; /* Centraliza o texto */
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
   }
 
   .main-left h4 {
-    font-size: 40px; /* Reduz o tamanho do título */
-    width: 100%; /* Permite que o texto ocupe toda a largura */
+    font-size: 40px;
+    width: 100%;
     margin-bottom: 15px;
   }
 
   .main-left p {
-    font-size: 16px; /* Ajusta o tamanho do parágrafo */
-    width: 100%; /* Permite que o texto ocupe toda a largura */
-    margin: 0 auto; /* Centraliza o texto */
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .main-left .button-group {
-    justify-content: center; /* Centraliza os botões */
-    margin-top: 15px; /* Ajusta o espaçamento superior */
+    justify-content: center;
+    margin-top: 15px;
   }
 
   .main-right {
-    justify-content: center; /* Centraliza a imagem */
-    margin-top: 20px; /* Adiciona espaçamento acima da imagem */
+    justify-content: center;
+    margin-top: 20px;
   }
 
   .main-right img {
-    max-width: 90%; /* Ajusta o tamanho da imagem para caber no layout */
-    padding-right: 0; /* Remove o padding lateral */
-    margin-top: 0; /* Remove margem superior */
-    border-radius: 10px; /* Suaviza as bordas */
+    max-width: 90%;
+    padding-right: 0;
+    margin-top: 0;
+    border-radius: 10px;
   }
 }
 
 @media (max-width: 768px) {
   .main-section {
-    padding-top: 80px;
+    padding-top: 78px;
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Footer.css';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
@@ -18,9 +19,15 @@ const Footer: React.FC = () => {
         <div className="rightText">
           <h2>Siga-nos</h2>
           <div className="links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">Github</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">Linkedin</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={30} />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={30} />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <FaTwitter size={30} />
+            </a>
           </div>
         </div>
       </div>
