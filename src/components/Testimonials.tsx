@@ -1,15 +1,22 @@
 import React, { useEffect, useState, useRef } from 'react';
 import '../styles/Testimonials.css';
 
+// Definindo a interface Testimonial
+interface Testimonial {
+  name: string;
+  role: string;
+  testimonial: string;
+}
+
 const Testimonials: React.FC = () => {
   const carrossel = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
-  const [testimonials, setTestimonials] = useState<unknown[]>([]);
+  const [testimonials, setTestimonials] = useState<Testimonial[]>([]); // Atualizado para Testimonial[]
 
   useEffect(() => {
     fetch('/testimonials.json')
       .then((response) => response.json())
-      .then((data) => setTestimonials(data.testimonials));
+      .then((data) => setTestimonials(data.testimonials)); // A resposta deve ter a estrutura de testimonials
   }, []);
 
   if (!testimonials || !testimonials.length) return <p>Carregando depoimentos...</p>;

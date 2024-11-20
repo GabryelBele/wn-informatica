@@ -22,7 +22,7 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="logo-container">
         <div className="text-container">
-          <img src="/public/smart.png" alt="Logo" className="logo" />
+          <img src="/smart.png" alt="Logo" className="logo" />
           <span className="logo-title">AplicativoCraft</span>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
