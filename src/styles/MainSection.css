@@ -1,0 +1,130 @@
+/* Main Section */
+.main-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 30px;
+  background-color: #FFF;
+}
+
+/* Left Section */
+.main-left {
+  max-width: 50%;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+.main-left h4 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: #111827;
+  width: 70%;
+}
+
+.main-left p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #4B5563;
+  width: 90%;
+  letter-spacing: 1.5px;
+}
+
+/* Button Group */
+.main-left .button-group {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os botões */
+  margin-top: 20px;
+}
+
+/* Buttons */
+.main-left .main-button {
+  padding: 12px 25px;
+  background-color: #4F46E5;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-left .main-button:hover {
+  background-color: #3c38c3;
+  transform: scale(1.05);
+}
+
+.main-left .main-button:active {
+  background-color: #2b2599;
+  transform: scale(0.95);
+}
+
+/* Right Section */
+.main-right {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 50%;
+}
+
+.main-right img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 15px;
+  padding-right: 25px;
+  margin-top: 30px;
+}
+
+/* Responsividade: Ajusta o layout para telas menores */
+@media (max-width: 936px) {
+  .main-section {
+    flex-direction: column; /* Muda para exibir os elementos em coluna */
+    padding: 20px; /* Ajusta o espaçamento */
+  }
+
+  .main-left, .main-right {
+    max-width: 100%; /* Define largura máxima de 100% */
+    margin: 0; /* Remove margens desnecessárias */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .main-left h4 {
+    font-size: 40px; /* Reduz o tamanho do título */
+    width: 100%; /* Permite que o texto ocupe toda a largura */
+    margin-bottom: 15px;
+  }
+
+  .main-left p {
+    font-size: 16px; /* Ajusta o tamanho do parágrafo */
+    width: 100%; /* Permite que o texto ocupe toda a largura */
+    margin: 0 auto; /* Centraliza o texto */
+  }
+
+  .main-left .button-group {
+    justify-content: center; /* Centraliza os botões */
+    margin-top: 15px; /* Ajusta o espaçamento superior */
+  }
+
+  .main-right {
+    justify-content: center; /* Centraliza a imagem */
+    margin-top: 20px; /* Adiciona espaçamento acima da imagem */
+  }
+
+  .main-right img {
+    max-width: 90%; /* Ajusta o tamanho da imagem para caber no layout */
+    padding-right: 0; /* Remove o padding lateral */
+    margin-top: 0; /* Remove margem superior */
+    border-radius: 10px; /* Suaviza as bordas */
+  }
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    padding-top: 80px;
+  }
+}

@@ -1,0 +1,95 @@
+/* Define o layout da seção do portfólio */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.portfolio-text {
+    margin-bottom: 60px;
+}
+
+.portfolio-text h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.portfolio-text p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.portfolio-Cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas para os cartões */
+    gap: 40px; /* Espaçamento entre os cartões */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.card-portfolio {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.card-portfolio img {
+    width: 100%; /* Mantém a imagem ocupando toda a largura do card */
+    height: 200px; /* Altura fixa */
+    border-radius: 8px 8px 0 0; /* Bordas arredondadas */
+    margin-bottom: 15px;
+    object-fit: cover; /* Ajusta o conteúdo para caber no espaço */
+    transition: transform 0.3s ease-in-out; /* Transição suave para o efeito de zoom */
+}
+
+.card-portfolio {
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do card */
+    position: relative; /* Posicionamento para aplicar estilos internos */
+}
+
+.card-portfolio img:hover {
+    transform: scale(1.2); /* Amplia a imagem dentro do espaço */
+}
+
+
+.card-portfolio h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+    text-align: center;
+}
+
+.card-portfolio p {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+/* Responsivo: Ajusta para duas colunas em telas médias e uma coluna em telas pequenas */
+@media (max-width: 1024px) {
+    .portfolio-Cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-Cards {
+        grid-template-columns: 1fr; /* 1 coluna para telas pequenas */
+    }
+}

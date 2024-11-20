@@ -1,0 +1,82 @@
+/* Define o layout da seção principal */
+.Section-Services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.Services-text {
+    margin-top: 70px;
+}
+
+.Services-text h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.Services-text p {
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    width: 60%;
+    margin: 0 auto; /* Centraliza o parágrafo no contêiner */
+}
+
+
+.Services-Cards {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card-services {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-services img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.card-services h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.card-services p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsivo: Para telas menores, ajusta para 2 ou 1 colunas */
+@media (max-width: 1024px) {
+    .Services-Cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    .Services-Cards {
+        grid-template-columns: 1fr; /* 1 coluna para telas pequenas */
+    }
+}

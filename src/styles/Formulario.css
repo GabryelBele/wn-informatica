@@ -1,0 +1,100 @@
+/* Estilo do Formulário Principal */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; /* Define a largura do formulário para 50% */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.formulario h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.formulario p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-group div {
+    margin-bottom: 20px;
+}
+
+.form-group p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.btn-form {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-form:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .formulario {
+        width: 80%; /* Expande o formulário para 80% da largura em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        width: 100%; /* Expande o formulário para 100% da largura em telas bem pequenas */
+        padding: 20px;
+    }
+
+    .formulario h2 {
+        font-size: 24px;
+    }
+
+    .formulario p {
+        font-size: 14px;
+    }
+
+    .btn-form {
+        font-size: 14px;
+    }
+}

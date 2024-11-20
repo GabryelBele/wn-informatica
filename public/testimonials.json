@@ -1,0 +1,80 @@
+{
+    "testimonials": [
+      {
+        "name": "João Silva",
+        "role": "Empresário",
+        "testimonial": "A AppCraft transformou minha ideia em um aplicativo que revolucionou meu negócio. Atendimento excepcional!"
+      },
+      {
+        "name": "Mariana Santos",
+        "role": "Empreendedora",
+        "testimonial": "O time da AppCraft é incrível! Criaram um app funcional e bonito, exatamente como eu imaginava."
+      },
+      {
+        "name": "Carlos Oliveira",
+        "role": "Gerente de Projetos",
+        "testimonial": "A agilidade e profissionalismo da AppCraft são incomparáveis. O resultado foi além das expectativas."
+      },
+      {
+        "name": "Renata Almeida",
+        "role": "Fundadora de Startup",
+        "testimonial": "Eles ouviram todas as minhas ideias e as transformaram em um app intuitivo e prático. Excelente trabalho!"
+      },
+      {
+        "name": "Lucas Pereira",
+        "role": "Desenvolvedor",
+        "testimonial": "A colaboração com a AppCraft foi incrível. Eles têm processos bem definidos e entregam com qualidade."
+      },
+      {
+        "name": "Fernanda Costa",
+        "role": "Diretora de Marketing",
+        "testimonial": "O aplicativo desenvolvido pela AppCraft aumentou nosso engajamento em 50%! Resultados impressionantes."
+      },
+      {
+        "name": "Gabriel Nunes",
+        "role": "CEO",
+        "testimonial": "Confiei na AppCraft para nosso projeto mais importante, e eles entregaram com excelência. Recomendo!"
+      },
+      {
+        "name": "Aline Barros",
+        "role": "Gerente de Vendas",
+        "testimonial": "O app ficou perfeito para nossas necessidades. A equipe foi super atenciosa e eficiente."
+      },
+      {
+        "name": "Thiago Lima",
+        "role": "Analista de Sistemas",
+        "testimonial": "Trabalhar com a AppCraft foi uma experiência incrível. Alta qualidade e foco no cliente."
+      },
+      {
+        "name": "Bruna Souza",
+        "role": "Freelancer",
+        "testimonial": "Eu precisava de um app simples e funcional, e a AppCraft entregou muito mais do que eu esperava!"
+      },
+      {
+        "name": "Ricardo Mendes",
+        "role": "Consultor de TI",
+        "testimonial": "A AppCraft é referência em desenvolvimento mobile. Um parceiro de confiança!"
+      },
+      {
+        "name": "Patrícia Gonçalves",
+        "role": "Professora",
+        "testimonial": "Eles criaram um app educacional incrível para minha escola. As crianças adoraram!"
+      },
+      {
+        "name": "Eduardo Ferreira",
+        "role": "Artista",
+        "testimonial": "A AppCraft conseguiu traduzir minha visão criativa em um aplicativo impressionante. Muito obrigado!"
+      },
+      {
+        "name": "Camila Rocha",
+        "role": "Blogueira",
+        "testimonial": "Meu blog nunca esteve tão acessível! Obrigada AppCraft pelo app maravilhoso."
+      },
+      {
+        "name": "André Souza",
+        "role": "Consultor Financeiro",
+        "testimonial": "A AppCraft é a melhor escolha para quem busca inovação e resultados de alto nível."
+      }
+    ]
+  }
+  

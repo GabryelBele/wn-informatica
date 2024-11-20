@@ -1,0 +1,88 @@
+/* Define o layout da seção de processos */
+.processos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.processos-text {
+    margin-bottom: 30px;
+}
+
+.processos-text h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.processos-text p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.processos-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card-processos {
+    background-color: #fff;
+    padding: 20px 60px;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%; /* Ajuste conforme necessário */
+    max-width: 400px; /* Limita a largura máxima do card */
+}
+
+
+.flex-row-card-processos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.flex-row-card-processos img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.card-processos h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.card-processos p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsivo: Ajusta para duas colunas em telas médias e uma coluna em telas pequenas */
+@media (max-width: 1024px) {
+    .processos-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .processos-cards {
+        grid-template-columns: 1fr;
+    }
+}

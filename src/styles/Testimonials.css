@@ -1,0 +1,69 @@
+.testimonials-container {
+  max-width: 75vw;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border:none;
+  padding: 20px;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonials-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonials-header p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.testimonials-carrossel { display: flex; overflow-x: auto; scroll-behavior: smooth; gap: 20px; /* Espaçamento entre cards */ padding: 10px 0; } .testimonial-item { min-width: 300px; /* Largura fixa dos cards */ max-width: 300px; flex: none; background-color: #ffffff; padding: 20px; border-radius: 16px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; }
+
+
+.testimonials-carrossel::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.testimonial-author span {
+  font-weight: normal;
+  color: #777;
+}
+
+.testimonials-buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.testimonials-buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.testimonials-buttons button:first-child img {
+  transform: rotate(180deg);
+}
+
+
+
+
+
